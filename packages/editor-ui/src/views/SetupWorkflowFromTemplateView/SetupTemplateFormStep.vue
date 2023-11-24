@@ -1,14 +1,14 @@
 <template>
 	<li data-test-id="setup-credentials-form-step">
 		<n8n-heading tag="h2" size="large">
-			<div v-if="nodeType" class="heading">
+			<div v-if="nodeType" class="heading" data-test-id="credential-step-heading">
 				<span class="headingOrder">{{ order }}.</span>
 				<span class="headingIcon"><NodeIcon :node-type="nodeType" /></span>
 				{{ appName }}
 			</div>
 		</n8n-heading>
 
-		<p class="description">
+		<p class="description" data-test-id="credential-step-description">
 			<i18n-t
 				tag="span"
 				keypath="templateSetup.credential.description"
